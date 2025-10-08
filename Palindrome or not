@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int ans=num;
+        int sum=0;
+        while(num>0){
+            int y=num%10;
+            sum=sum*10+y;
+            num=num/10;
+        }
+         System.out.println((sum==ans)?"Palindrome":"not");
+    }
+ } 
